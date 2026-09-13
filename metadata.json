@@ -1,0 +1,6 @@
+{
+  "name": "婚禮大樂透",
+  "description": "婚禮現場大樂透開獎與號碼錄入展示系統，專為婚禮宴會投影與賓客對獎設計",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
