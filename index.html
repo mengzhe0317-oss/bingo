@@ -3,29 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      // Ensure window.fetch is writable and configurable to prevent polyfill TypeError: Cannot set property fetch of #<Window> which has only a getter
-      (function() {
-        try {
-          var originalFetch = window.fetch;
-          if (originalFetch) {
-            var currentDesc = Object.getOwnPropertyDescriptor(window, 'fetch') || 
-                              Object.getOwnPropertyDescriptor(Object.getPrototypeOf(window), 'fetch');
-            if (currentDesc && (!currentDesc.writable || !currentDesc.set)) {
-              var fetchRef = originalFetch;
-              Object.defineProperty(window, 'fetch', {
-                get: function() { return fetchRef; },
-                set: function(fn) { fetchRef = fn; },
-                configurable: true,
-                enumerable: true
-              });
-            }
-          }
-        } catch (e) {
-          // continue silently
-        }
-      })();
-    </script>
     <title>婚禮大樂透 - 幸福開獎現場</title>
     <meta name="description" content="婚禮現場大樂透開獎與號碼錄入展示系統，專為婚禮宴會投影與賓客對獎設計" />
     <meta property="og:title" content="婚禮大樂透 - 幸福開獎現場" />

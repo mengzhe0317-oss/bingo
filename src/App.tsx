@@ -24,18 +24,18 @@ const DEFAULT_CONFIG: WeddingConfig = {
   eventSubtitle: '浪漫滿溢 · 幸福大樂透開獎現場',
   weddingDate: '喜結良緣 · 永結同心',
   maxNumber: 49,
-  targetCount: 6,
-  hasSpecialNumber: true,
+  targetCount: 5,
+  hasSpecialNumber: false,
   soundEnabled: true,
   themeStyle: 'burgundy-gold',
-  presetNumbers: [6, 8, 16, 28, 36], // 後台預設 5 個幸運號碼，保密不顯示於前台
+  presetNumbers: [3, 21, 4, 11, 5], // 後台預設 5 個幸運號碼 (03, 21, 04, 11, 05)，前台保密隱藏
   showNumberMatrix: false, // 預設不顯示全號碼總覽看板（可在設定中切換開啟）
   showInputPad: true, // 預設顯示主持人控制台（可一鍵或在設定中隱藏）
 };
 
 const STORAGE_KEYS = {
-  DRAWN_NUMBERS: 'wedding_lotto_drawn_v5',
-  CONFIG: 'wedding_lotto_config_v5',
+  DRAWN_NUMBERS: 'wedding_lotto_drawn_v6',
+  CONFIG: 'wedding_lotto_config_v6',
 };
 
 export default function App() {
